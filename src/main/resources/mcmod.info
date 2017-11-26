@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "placeables",
+  "name": "Placeables",
+  "description": "Allows certain vanilla items to be placed in the world as dust/blocks.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["IceMetalPunk"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
