@@ -2,6 +2,9 @@ package com.icemetalpunk.placeables;
 
 import com.icemetalpunk.placeables.proxies.CommonProxy;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -14,6 +17,15 @@ public class Placeables {
 
 	@SidedProxy(clientSide = "com.icemetalpunk.placeables.proxies.ClientProxy", serverSide = "com.icemetalpunk.placeables.proxies.ServerProxy")
 	public static CommonProxy proxy;
+
+	public static CreativeTabs tab = new CreativeTabs("placeables") {
+
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(Items.GLOWSTONE_DUST);
+		}
+
+	};
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
