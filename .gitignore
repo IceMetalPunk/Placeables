@@ -1,0 +1,17 @@
+/*
+!/src/
+!.gitignore
+!gradlew*
+!/gradle/
+!/LICENSE.txt
+!/README.md
+!/ContactInfo.md
+!build.gradle
+!.travis.yml
+!/textures/
+!/gradle.properties
+!.gitattributes
+!ASSETS_LICENSE.txt
+!BranchDesc.md
+!/lib/
+!/images/
