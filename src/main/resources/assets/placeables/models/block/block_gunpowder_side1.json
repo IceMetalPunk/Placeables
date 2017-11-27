@@ -1,0 +1,6 @@
+{
+    "parent": "placeables:block/block_gunpowder_side",
+    "textures": {
+        "line": "minecraft:blocks/redstone_dust_line1"
+    }
+}

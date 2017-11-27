@@ -8,6 +8,7 @@ import javax.annotation.Nullable;
 import com.icemetalpunk.placeables.Placeables;
 import com.icemetalpunk.placeables.blocks.BasicBlock;
 import com.icemetalpunk.placeables.blocks.BlockGlowstoneDust;
+import com.icemetalpunk.placeables.blocks.BlockGunpowder;
 import com.icemetalpunk.placeables.interfaces.ITintedBlock;
 
 import net.minecraft.block.Block;
@@ -21,6 +22,7 @@ public class BlockRegistry {
 	public BlockRegistry() {
 		// TODO: "Register" blocks here.
 		this.registry.put("block_glowstone_dust", new BlockGlowstoneDust(Placeables.MODID, "block_glowstone_dust"));
+		this.registry.put("block_gunpowder", new BlockGunpowder(Placeables.MODID, "block_gunpowder"));
 	}
 
 	@Nullable

@@ -50,7 +50,6 @@ public class BlockGlowstoneDust extends BlockDustBase implements ITintedBlock {
 	@SideOnly(value = Side.CLIENT)
 	@Override
 	public void registerTintHandler(BlockColors colors) {
-		System.out.println("Registering Block Colors for glowstone");
 		colors.registerBlockColorHandler(new IBlockColor() {
 
 			@Override
