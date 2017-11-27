@@ -9,7 +9,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 
 public class BasicBlock extends Block implements IModeledObject {
@@ -18,7 +17,8 @@ public class BasicBlock extends Block implements IModeledObject {
 
 	public BasicBlock(String mod, String name, Material materialIn) {
 		super(materialIn);
-		this.setRegistryName(new ResourceLocation(mod, name)).setUnlocalizedName(name);
+		this.setRegistryName(mod, name).setUnlocalizedName(name);
+		this.itemBlock.setRegistryName(mod, name);
 	}
 
 	public BasicBlock(String mod, String name, Material materialIn, CreativeTabs tab) {
@@ -38,9 +38,8 @@ public class BasicBlock extends Block implements IModeledObject {
 
 	@Override
 	public void registerModel() {
-		ModelResourceLocation model = new ModelResourceLocation(this.getRegistryName(), "inventory");
-
 		if (this.itemBlock != null) {
+			ModelResourceLocation model = new ModelResourceLocation(this.getRegistryName(), "inventory");
 			ModelLoader.registerItemVariants(this.itemBlock, model);
 			ModelLoader.setCustomModelResourceLocation(this.itemBlock, 0, model);
 		}

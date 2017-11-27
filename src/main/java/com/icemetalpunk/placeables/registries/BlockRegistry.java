@@ -8,8 +8,10 @@ import javax.annotation.Nullable;
 import com.icemetalpunk.placeables.Placeables;
 import com.icemetalpunk.placeables.blocks.BasicBlock;
 import com.icemetalpunk.placeables.blocks.BlockGlowstoneDust;
+import com.icemetalpunk.placeables.interfaces.ITintedBlock;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.color.BlockColors;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -49,6 +51,15 @@ public class BlockRegistry {
 	public void registerModels() {
 		for (BasicBlock block : this.registry.values()) {
 			block.registerModel();
+		}
+	}
+
+	public void registerTints(BlockColors colors) {
+		for (BasicBlock block : this.registry.values()) {
+			if (block instanceof ITintedBlock) {
+				ITintedBlock tinted = (ITintedBlock) block;
+				tinted.registerTintHandler(colors);
+			}
 		}
 	}
 

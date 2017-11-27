@@ -7,6 +7,9 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class CommonProxy {
@@ -18,15 +21,15 @@ public class CommonProxy {
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
-	public void preinit() {
+	public void preinit(FMLPreInitializationEvent ev) {
 
 	}
 
-	public void init() {
+	public void init(FMLInitializationEvent ev) {
 
 	}
 
-	public void postinit() {
+	public void postinit(FMLPostInitializationEvent ev) {
 
 	}
 

@@ -1,5 +1,5 @@
 {
-    "parent": "placebales:block/block_glowstone_dust_side_alt",
+    "parent": "placeables:block/block_glowstone_dust_side_alt",
     "textures": {
         "line": "minecraft:blocks/redstone_dust_line1"
     }
