@@ -1,5 +1,7 @@
 package com.icemetalpunk.placeables.blocks;
 
+import javax.annotation.Nullable;
+
 import com.icemetalpunk.placeables.interfaces.IModeledObject;
 
 import net.minecraft.block.Block;
@@ -24,15 +26,24 @@ public class BasicBlock extends Block implements IModeledObject {
 		this.itemBlock.setCreativeTab(tab);
 	}
 
+	@Nullable
 	public ItemBlock getItemBlock() {
 		return this.itemBlock;
+	}
+
+	public BasicBlock setNoItem() {
+		this.itemBlock = null;
+		return this;
 	}
 
 	@Override
 	public void registerModel() {
 		ModelResourceLocation model = new ModelResourceLocation(this.getRegistryName(), "inventory");
-		ModelLoader.registerItemVariants(this.itemBlock, model);
-		ModelLoader.setCustomModelResourceLocation(this.itemBlock, 0, model);
+
+		if (this.itemBlock != null) {
+			ModelLoader.registerItemVariants(this.itemBlock, model);
+			ModelLoader.setCustomModelResourceLocation(this.itemBlock, 0, model);
+		}
 	}
 
 }

@@ -5,7 +5,9 @@ import java.util.HashMap;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import com.icemetalpunk.placeables.Placeables;
 import com.icemetalpunk.placeables.blocks.BasicBlock;
+import com.icemetalpunk.placeables.blocks.BlockGlowstoneDust;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -16,6 +18,7 @@ public class BlockRegistry {
 
 	public BlockRegistry() {
 		// TODO: "Register" blocks here.
+		this.registry.put("block_glowstone_dust", new BlockGlowstoneDust(Placeables.MODID, "block_glowstone_dust"));
 	}
 
 	@Nullable
@@ -36,7 +39,10 @@ public class BlockRegistry {
 
 	public void registerItemBlocks(IForgeRegistry<Item> reg) {
 		for (BasicBlock block : this.registry.values()) {
-			reg.register(block.getItemBlock());
+			Item itemBlock = block.getItemBlock();
+			if (itemBlock != null) {
+				reg.register(itemBlock);
+			}
 		}
 	}
 
