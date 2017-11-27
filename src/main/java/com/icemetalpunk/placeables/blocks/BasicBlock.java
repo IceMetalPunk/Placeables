@@ -17,8 +17,8 @@ public class BasicBlock extends Block implements IModeledObject {
 
 	public BasicBlock(String mod, String name, Material materialIn) {
 		super(materialIn);
-		this.setRegistryName(mod, name).setUnlocalizedName(name);
-		this.itemBlock.setRegistryName(mod, name);
+		this.setRegistryName(mod, name).setUnlocalizedName(mod + "." + name);
+		this.itemBlock.setRegistryName(mod, name).setUnlocalizedName(mod + "." + name);
 	}
 
 	public BasicBlock(String mod, String name, Material materialIn, CreativeTabs tab) {
