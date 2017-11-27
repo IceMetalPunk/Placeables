@@ -1,0 +1,6 @@
+{
+    "parent": "placeables:block/block_glowstone_dust_side",
+    "textures": {
+        "line": "minecraft:blocks/redstone_dust_line1"
+    }
+}
