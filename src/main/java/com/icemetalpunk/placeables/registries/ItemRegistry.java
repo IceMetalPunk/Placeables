@@ -14,7 +14,7 @@ public class ItemRegistry {
 	private HashMap<String, BasicItem> registry = new HashMap<>();
 
 	public ItemRegistry() {
-		// TODO: "Register" blocks here.
+		// TODO: "Register" items here.
 	}
 
 	@Nullable

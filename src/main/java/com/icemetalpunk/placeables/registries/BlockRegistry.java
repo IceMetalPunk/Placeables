@@ -20,7 +20,6 @@ public class BlockRegistry {
 	private HashMap<String, BasicBlock> registry = new HashMap<>();
 
 	public BlockRegistry() {
-		// TODO: "Register" blocks here.
 		this.registry.put("block_glowstone_dust", new BlockGlowstoneDust(Placeables.MODID, "block_glowstone_dust"));
 		this.registry.put("block_gunpowder", new BlockGunpowder(Placeables.MODID, "block_gunpowder"));
 	}
