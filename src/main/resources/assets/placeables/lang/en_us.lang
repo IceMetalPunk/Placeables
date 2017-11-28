@@ -2,3 +2,4 @@ itemGroup.placeables=Placeables
 
 tile.placeables.block_glowstone_dust=Glowstone Dust
 tile.placeables.block_gunpowder=Gunpowder
+tile.placeables.block_slime_layer=Slime Layer
