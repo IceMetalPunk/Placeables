@@ -12,6 +12,7 @@ import com.icemetalpunk.placeables.blocks.BlockGunpowder;
 import com.icemetalpunk.placeables.blocks.BlockLayerMagmaCream;
 import com.icemetalpunk.placeables.blocks.BlockLayerSlime;
 import com.icemetalpunk.placeables.blocks.BlockStick;
+import com.icemetalpunk.placeables.blocks.BlockSugarDust;
 import com.icemetalpunk.placeables.interfaces.ITintedBlock;
 
 import net.minecraft.block.Block;
@@ -25,6 +26,7 @@ public class BlockRegistry {
 	public BlockRegistry() {
 		this.registry.put("block_glowstone_dust", new BlockGlowstoneDust(Placeables.MODID, "block_glowstone_dust"));
 		this.registry.put("block_gunpowder", new BlockGunpowder(Placeables.MODID, "block_gunpowder"));
+		this.registry.put("block_sugar_dust", new BlockSugarDust(Placeables.MODID, "block_sugar_dust"));
 		this.registry.put("block_slime_layer", new BlockLayerSlime(Placeables.MODID, "block_slime_layer"));
 		this.registry.put("block_stick", new BlockStick(Placeables.MODID, "block_stick"));
 		this.registry.put("block_magma_cream_layer",
