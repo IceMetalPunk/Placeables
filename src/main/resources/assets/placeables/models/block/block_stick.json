@@ -1,0 +1,20 @@
+{
+    "textures": {
+		"side": "minecraft:blocks/log_oak",
+		"top": "minecraft:blocks/log_oak_top",
+        "particle": "minecraft:blocks/log_oak"
+    },
+    "elements": [
+        {   "from": [ 7, 0, 7 ],
+            "to": [ 9, 16, 9 ],
+            "faces": {
+                "down":  { "uv": [ 4, 4, 12, 12 ], "texture": "#top", "cullface": "down" },
+                "up":    { "uv": [ 4, 4, 12, 12 ], "texture": "#top", "cullface": "up"   },
+                "north": { "uv": [ 6, 0, 10, 16 ], "texture": "#side" },
+                "south": { "uv": [ 6, 0, 10, 16 ], "texture": "#side" },
+                "west":  { "uv": [ 6, 0, 10, 16 ], "texture": "#side" },
+                "east":  { "uv": [ 6, 0, 10, 16 ], "texture": "#side" }
+            }
+        }
+    ]
+}
