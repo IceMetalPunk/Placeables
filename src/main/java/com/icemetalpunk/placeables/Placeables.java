@@ -1,11 +1,10 @@
 /* TODO: Next
- * 1. Placeable sugar: attract tameable animals
- * 2. Placeable leaf: decraft 1 leaves block into 9 leafs, placeable in 8 rotations on floor as decoration
- * 3. Placeable stone: decraft 1 cobblestone into 9 stones, placeable on floor as decoration, throwable for mild damage
- * 4. Dyes directly placeable onto blocks with color properties (handle bone meal appropriately!)
- * 5. Placeable ghast tears (trails)?: Maybe makes things slippery and "guides/pushes" entities along, like a conveyor?
- * 6. Placeable blaze powder: Acts like magma blocks with "hot floor" damage? How can we make this more unique?
- * 7. Placeable Nether star?: Floats above ground like item without bob; cures negative potions in radius?
+ * 1. Placeable leaf: decraft 1 leaves block into 9 leafs, placeable in 8 rotations on floor as decoration
+ * 2. Placeable stone: decraft 1 cobblestone into 9 stones, placeable on floor as decoration, throwable for mild damage
+ * 3. Dyes directly placeable onto blocks with color properties (handle bone meal appropriately!)
+ * 4. Placeable ghast tears (trails)?: Maybe makes things slippery and "guides/pushes" entities along, like a conveyor?
+ * 5. Placeable blaze powder: Acts like magma blocks with "hot floor" damage? How can we make this more unique?
+ * 6. Placeable Nether star?: Floats above ground like item without bob; cures negative potions in radius?
  */
 
 package com.icemetalpunk.placeables;
