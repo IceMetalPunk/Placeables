@@ -11,6 +11,7 @@
 package com.icemetalpunk.placeables;
 
 import com.icemetalpunk.placeables.events.MainEventHandler;
+import com.icemetalpunk.placeables.events.SecondaryEventHandler;
 import com.icemetalpunk.placeables.proxies.CommonProxy;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -32,6 +33,7 @@ public class Placeables {
 	public static CommonProxy proxy;
 
 	public static MainEventHandler eventHandler = new MainEventHandler();
+	public static SecondaryEventHandler secondaryEventHandler = new SecondaryEventHandler();
 
 	public static CreativeTabs tab = new CreativeTabs("placeables") {
 
