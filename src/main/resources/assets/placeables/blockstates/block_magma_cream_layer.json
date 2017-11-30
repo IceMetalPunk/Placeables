@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "placeables:block_magma_cream_layer" }
+    }
+}

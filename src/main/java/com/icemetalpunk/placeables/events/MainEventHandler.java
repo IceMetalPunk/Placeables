@@ -25,6 +25,7 @@ public class MainEventHandler {
 		blockMap.put(Items.GUNPOWDER, "block_gunpowder");
 		blockMap.put(Items.SLIME_BALL, "block_slime_layer");
 		blockMap.put(Items.STICK, "block_stick");
+		blockMap.put(Items.MAGMA_CREAM, "block_magma_cream_layer");
 	}
 
 	public MainEventHandler() {
