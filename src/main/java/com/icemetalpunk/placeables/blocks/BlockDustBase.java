@@ -331,6 +331,11 @@ public class BlockDustBase extends BasicBlock {
 		return BlockFaceShape.UNDEFINED;
 	}
 
+	@Override
+	public boolean isPassable(IBlockAccess worldIn, BlockPos pos) {
+		return true;
+	}
+
 	static enum EnumAttachPosition implements IStringSerializable {
 		UP("up"), SIDE("side"), NONE("none");
 

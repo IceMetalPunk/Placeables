@@ -88,8 +88,8 @@ public class EntityAIFindSugar extends EntityAIBase {
 
 	@Override
 	public void startExecuting() {
-		this.entity.getNavigator().tryMoveToXYZ(this.sugarPos.getX(), this.sugarPos.getY(), this.sugarPos.getZ(),
-				this.speed);
+		this.entity.getNavigator().tryMoveToXYZ(this.sugarPos.getX() + 0.5, this.sugarPos.getY(),
+				this.sugarPos.getZ() + 0.5, this.speed);
 	}
 
 	@Override
@@ -99,6 +99,7 @@ public class EntityAIFindSugar extends EntityAIBase {
 		BlockPos pos = new BlockPos(eyePos.x, origin.getY(), eyePos.z);
 		Block block = this.world.getBlockState(pos).getBlock();
 		if (block == Placeables.proxy.blocks.get("block_sugar_dust")) {
+			this.entity.getLookHelper().setLookPositionWithEntity(this.entity, 0.0f, 40.0f);
 			this.world.setBlockToAir(pos);
 			return false;
 		}
