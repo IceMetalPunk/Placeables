@@ -13,7 +13,7 @@ import net.minecraftforge.client.model.ModelLoader;
 
 public class BasicBlock extends Block implements IModeledObject {
 
-	private ItemBlock itemBlock = new ItemBlock(this);
+	protected ItemBlock itemBlock = new ItemBlock(this);
 
 	public BasicBlock(String mod, String name, Material materialIn) {
 		super(materialIn);
@@ -33,6 +33,11 @@ public class BasicBlock extends Block implements IModeledObject {
 
 	public BasicBlock setNoItem() {
 		this.itemBlock = null;
+		return this;
+	}
+
+	public BasicBlock setItemBlock(ItemBlock item) {
+		this.itemBlock = item;
 		return this;
 	}
 

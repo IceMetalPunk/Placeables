@@ -5,7 +5,9 @@ import java.util.HashMap;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import com.icemetalpunk.placeables.Placeables;
 import com.icemetalpunk.placeables.items.BasicItem;
+import com.icemetalpunk.placeables.items.ItemLeaf;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -14,7 +16,8 @@ public class ItemRegistry {
 	private HashMap<String, BasicItem> registry = new HashMap<>();
 
 	public ItemRegistry() {
-		// TODO: "Register" items here.
+		this.registry.put("item_leaf", new ItemLeaf(Placeables.MODID, "item_leaf",
+				Placeables.proxy.blocks.get("block_leaf"), Placeables.tab));
 	}
 
 	@Nullable
