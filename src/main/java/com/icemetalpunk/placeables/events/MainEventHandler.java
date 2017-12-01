@@ -42,6 +42,9 @@ public class MainEventHandler {
 		BlockPos pos = ev.getPos();
 		if (!world.getBlockState(pos).getBlock().isReplaceable(world, pos)) {
 			pos = pos.offset(face);
+			if (!world.getBlockState(pos).getBlock().isReplaceable(world, pos)) {
+				return;
+			}
 		}
 
 		// Place blocks
